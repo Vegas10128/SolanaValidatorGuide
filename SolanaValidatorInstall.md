@@ -63,6 +63,7 @@ you need atleast 2 keys to run a solana instance.  Identification Key & Voting K
 ```
 $ solana-keygen new -o ~/.config/solana/id.json  #( this is your identification key )
 $ solana-keygen new -o ~/.config/solana/vote.json  #( this is your voting key )
+$ solana-keygen new -o ~/.config/solana/pubkey.json #( this is your pub key )
 ```
 
 ### Configure your preferred cluster
@@ -81,7 +82,7 @@ $ solana balance ( should display the balance of 1 testnet solana )
 ```
 ### Create your vote account
 ```
-$ solana create-vote-account ~/.config/solana/vote.json ~/.config/solana/id.json
+$ solana create-vote-account ~/.config/solana/vote.json ~/.config/solana/id.json ~/.config/solana/pubkey.json
 ```
 ### Tune your unix kernel
 https://docs.solana.com/running-validator/validator-start#system-tuning
